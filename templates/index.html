@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bike Demand API</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <div class="login">
+            <h1>Bike Demand Prediction Analysis</h1>
+            <form action="{{url_for('predict')}}" method="post">
+                <p>
+                    <input type="number" name="Time of Day" placeholder="Time" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Temperature" placeholder="Temperature" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Humidity" placeholder="Humidity" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Wind Speed" placeholder="Wind Speed" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Visibility" placeholder="Visibility" required="required">
+                </p>
+                <p>
+                    <input type="Dew Point Temperature" name="Dew Point Temperature" placeholder="DEw Point Temperature" required="required"/>
+                </p>
+                <p>
+                    <input type="Solar Radiation" name="Solar Radiation" placeholder="Solar Radiation" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Rainfall" placeholder="Rainfall" required="required"/>
+                </p>
+                <p>
+                    <input type="number" name="Snowfall" placeholder="Snowfall" required="required"/>
+                </p>
+                <p>
+                    <input type="text" name="Seasons" placeholder="Seasons" required="required"/>
+                </p>
+                <p>
+                    <input type="text" name="Holiday" placeholder="Holiday" required="required"/>
+                </p>
+                <p>
+                    <input type="text" name="Working Day" placeholder="Working Day" required="required"/>
+                </p>
+                <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
+
+            </form>
+            <br>
+            <br>
+            {{prediction_text}}
+
+        </div>
+    </body>
+</html>
