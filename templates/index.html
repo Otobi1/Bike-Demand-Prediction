@@ -14,42 +14,54 @@
             <h1>Bike Demand Prediction Analysis</h1>
             <form action="{{url_for('predict')}}" method="post">
                 <p>
-                    <input type="number" name="Time of Day" placeholder="Time" required="required"/>
+                    <h4 style="background-color: darkgreen;">Time of Day,<i>[0 to 24 hours]</i> </h4>
+                    <input type="number" name="Time of Day" placeholder="Time" required="required" min="0" max="24"/>
                 </p>
                 <p>
-                    <input type="number" name="Temperature" placeholder="Temperature" required="required"/>
+                    <h4 style="background-color:darkgreen;">Temperature, <i>°C</i></h4>
+                    <input type="number" name="Temperature" placeholder="Temperature" required="required" min="-40" max="40" step=".1"/>
                 </p>
                 <p>
-                    <input type="number" name="Humidity" placeholder="Humidity" required="required"/>
+                    <h4 style="background-color: darkgreen;">Humidity, <i>%</i></h4>
+                    <input type="number" name="Humidity" placeholder="Humidity" required="required" min="0" max="100"/>
                 </p>
                 <p>
-                    <input type="number" name="Wind Speed" placeholder="Wind Speed" required="required"/>
+                    <h4 style="background-color: darkgreen;">Wind Speed, <i>m/s</i></h4>
+                    <input type="number" name="Wind Speed" placeholder="Wind Speed" required="required" min="0" max="10" step=".1"/>
                 </p>
                 <p>
+                    <h4 style="background-color: darkgreen;">Visibility, <i>(10m)</i></h4>
                     <input type="number" name="Visibility" placeholder="Visibility" required="required">
                 </p>
                 <p>
-                    <input type="Dew Point Temperature" name="Dew Point Temperature" placeholder="Dew Point Temperature" required="required"/>
+                    <h4 style="background-color: darkgreen;">Dew Point Temperature, <i>°C</i></h4>
+                    <input type="Dew Point Temperature" name="Dew Point Temperature" placeholder="Dew Point Temperature" required="required" min="-40" max="40" step=".1"/>
                 </p>
                 <p>
-                    <input type="Solar Radiation" name="Solar Radiation" placeholder="Solar Radiation" required="required"/>
+                    <h4 style="background-color: darkgreen;">Solar Radiation, <i>(MJ/m2)</i></h4>
+                    <input type="Solar Radiation" name="Solar Radiation" placeholder="Solar Radiation" required="required" step=".1"/>
                 </p>
                 <p>
-                    <input type="number" name="Rainfall" placeholder="Rainfall" required="required"/>
+                    <h4 style="background-color: darkgreen;">Rainfall, <i>(mm)i></h4>
+                    <input type="number" name="Rainfall" placeholder="Rainfall" required="required" step=".1"/>
                 </p>
                 <p>
-                    <input type="number" name="Snowfall" placeholder="Snowfall" required="required"/>
+                    <h4 style="background-color: darkgreen;">Snowfall<i>(cm)</i></h4>
+                    <input type="number" name="Snowfall" placeholder="Snowfall" required="required" step=".1"/>
                 </p>
-                <p>
+                <p><h4 style="background-color: darkgreen;">Seasons, <i>Winter = 1, Spring =2, Summer = 3 Autumn = 4</i></h4>
                     <input type="text" name="Seasons" placeholder="Seasons" required="required"/>
                 </p>
                 <p>
+                    <h4 style="background-color: darkgreen;">Holiday, <i>No Holiday = 0, Holiday = 1</i></h4>
                     <input type="text" name="Holiday" placeholder="Holiday" required="required"/>
                 </p>
                 <p>
+                    <h4 style="background-color: darkgreen;">Working Day, <i>Yes = 1, No = 0</i></h4>
                     <input type="text" name="Working Day" placeholder="Working Day" required="required"/>
                 </p>
                 <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
+                <p><input type="reset">Reset</p>
 
             </form>
             <br>
