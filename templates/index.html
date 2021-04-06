@@ -10,9 +10,9 @@
         
     </head>
     <body>
-        <div class="login">
+        <div class="login" display="block" text-align="center">
             <h1>Bike Demand Prediction Analysis</h1>
-            <form action="{{url_for('predict')}}" method="post">
+            <form action="{{url_for('predict')}}" method="post" display="inline-block">
                 <p>
                     <h4 style="text-emphasis-color: darkgreen;">Time of Day,<i>[0 to 24 hours]</i> </h4>
                     <input type="number" name="Time of Day" placeholder="Time" required="required" min="0" max="24"/>
