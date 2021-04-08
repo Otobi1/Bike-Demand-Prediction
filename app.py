@@ -5,15 +5,15 @@ import pickle
 
 app = Flask(__name__)
 
-model = pickle.load(open('./model_files/model.bin', 'rb'))
+model = pickle.load(open("./model_files/model.bin", "rb"))
 
-@app.route('/')
 
+@app.route("/")
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
-@app.route('/predict', methods=['POST'])
 
+@app.route("/predict", methods=["POST"])
 def predict():
     """
     For rendering results on HTML GUI
@@ -24,8 +24,9 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text = 'The bike demand is {}'.format(output))
+    return render_template(
+        "index.html", prediction_text="The bike demand is {}".format(output)
+    )
 
-    if __name__ == '__main':
-        app.run(debug = True, host='0.0.0.0', port=9696)
-
+    if __name__ == "__main":
+        app.run(debug=True, host="0.0.0.0", port=9696)
