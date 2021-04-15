@@ -2,8 +2,10 @@
 
 ## Data Collection
 
+<<<<<<< HEAD
     *Source* Data was sourced from the UCI Machine Learning Repository -
-    [Seoul-Bike-Sharing-Demand]: https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand
+    [Seoul-Bike-Sharing-Demand] [reflinks].
+    [reflinks]:<https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand>
 
     *Description*: The repo contains a brief explanation on why it is important
     understand bike demand, particularly to ensure the stability of supply and
