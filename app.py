@@ -5,7 +5,7 @@ import pickle
 
 app = Flask(__name__)
 
-model = pickle.load(open("./model_files/model.bin", "rb"))
+model = pickle.load(open("./model_files/modelv2.bin", "rb"))
 
 
 @app.route("/")
