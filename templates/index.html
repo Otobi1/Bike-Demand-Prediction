@@ -50,40 +50,30 @@
                     <input type="number" name="Snowfall" placeholder="Snowfall" required="required" step=".1"/>
                 </p>
                 <br>
-                <p><h3>Select Season</h3></p>
+                <p><h3>Season</h3></p>
                 <p>
-                    <input type="radio" id="Spring" name="No" value=0 checked>
-                    <label for="Spring">0</label>
-                    <input type="radio" id="Spring" name="Yes" value="1">
-                    <label for="Spring">Spring</label>
+                    <h4 style="text-emphasis-color: darkgreen;">Spring,<i>[0; No or 1; Yes]</i> </h4>
+                    <input type="number" name="Spring" placeholder="Spring" required="required" min="0" max="1"/>
                 </p>
                 <p>
-                    <input type="radio" id="Summer" name="No" value=0 checked>
-                    <label for="Summer">0</label>
-                    <input type="radio" id="Summer" name="Yes" value="1">
-                    <label for="Summer">Summer</label>
+                    <h4 style="text-emphasis-color: darkgreen;">Summer,<i>[0; No or 1; Yes]</i> </h4>
+                    <input type="number" name="Summer" placeholder="Summer" required="required" min="0" max="1"/>
                 </p>
                 <p>
-                    <input type="radio" id="Winter" name="No" value=0 checked>
-                    <label for="Winter">0</label>
-                    <input type="radio" id="Winter" name="Yes" value="1">
-                    <label for="Winter">Winter</label>
+                    <h4 style="text-emphasis-color: darkgreen;">Winter,<i>[0; No or 1; Yes]</i> </h4>
+                    <input type="number" name="Winter" placeholder="Winter" required="required" min="0" max="1"/>
                 </p>
                 <br>
-                <p><h3>Select Holiday</h3></p>
+                <p><h3>Holiday</h3></p>
                 <p>
-                    <input type="radio" id="No Holiday" name="No" value=0 checked>
-                    <label for="No Holiday">0</label>
-                    <input type="radio" id="Holiday" name="Yes" value="1">
-                    <label for="No Holiday">No Holiday</label>
+                    <h4 style="text-emphasis-color: darkgreen;">No Holiday,<i>[0; No or 1; Yes]</i> </h4>
+                    <input type="number" name="No Holiday" placeholder="No Holiday" required="required" min="0" max="1"/>
                 </p>
                 <br>
                 <p><h3>Select Working Day</h3></p>
                 <p>
-                    <input type="radio" id="WorkingDay Yes" name="No" value=0 checked>
-                    <label for="WorkingDay Yes">0</label>
-                    <input type="radio" id="Spring" name="Yes" value="1">
-                    <label for="WorkingDay Yes">WorkingDay Yes</label>
+                    <h4 style="text-emphasis-color: darkgreen;">WorkingDay Yes,<i>[0; No or 1; Yes]</i> </h4>
+                    <input type="Wor" name="WorkingDay Yes" placeholder="WorkingDay Yes" required="required" min="0" max="1"/>
                 </p>
                 <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
                 <p><input type="reset"></p>
