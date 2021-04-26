@@ -98,5 +98,5 @@
     this is pickled and packaged for deployment.
 
 ## Deployment
-
+    Flask API
     *Heroku*: https://bike-demand-pred.herokuapp.com/ 
